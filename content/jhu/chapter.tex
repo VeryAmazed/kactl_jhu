@@ -1,6 +1,18 @@
 \chapter{JHU}
 
-\section{Alan Equations}
-Testing, my equations will go here
+\section{Extra Equations}
+Legendres: the largest x s.t. $k^{x} | n!$ is
+\[ \left \lfloor{\frac{n}{k}}\right \rfloor + \left \lfloor{\frac{n}{k^{2}}}\right \rfloor + ... + \left \lfloor{\frac{n}{k^{i}}}\right \rfloor + ...\]
 
-\kactlimport{alan.h}
+Chicken Mcnugget: for any two pos relatively prime integers m, n, the greatest integer that cannot be written as $am+bn$ for non-neg a, b is $mn-m-n$. Additionally
+there are exactly $\frac{(m-1)(n-1)}{2}$ pos integers which cannot be expressed in the form $am+bn$.
+
+Pick's: area of a polygon whose vertices are all lattice points in a coord plane is 
+\[ A = I + \frac{1}{2}B-1\]
+I is number of interior lattice points, B is number of border lattice points
+
+Shoelace: Suppose polygon P has vertices $(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)$, listed clockwise. Then area of P is
+\[ A = \frac{1}{2}|(x_1y_2 + x_2y_3 + ... + x_ny_1) - (y_1x_2+y_2x_3+...+y_nx_1)|\]
+
+${2n \choose n} = \sum_{k=0}^{n}{n \choose k}^{2}$
+\kactlimport{Dense.h}
