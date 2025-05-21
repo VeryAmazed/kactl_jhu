@@ -2,7 +2,7 @@
  * Author: Storzven (Steven) Tan
  * Date: 
  * License: 
- * Description: Storzven Tan's Lazy Segment Tree
+ * Description:
  * Time:
  * Status: 
  */
@@ -12,8 +12,8 @@ struct LazySegTree {
     LazySegTree(int n) : t(4 * n), lazy(4 * n) {}
     void push(int v) {
         if (lazy[v] != 0) {
-            lazy[v * 2] += lazy[v]; t[v * 2] += lazy[v];
-            lazy[v * 2 + 1] += lazy[v]; t[v * 2 + 1] += lazy[v];
+            lazy[v*2] += lazy[v]; t[v*2] += lazy[v];
+            lazy[v*2+1] += lazy[v]; t[v*2+1] += lazy[v];
             lazy[v] = 0;
         }
     }
